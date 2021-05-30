@@ -167,7 +167,9 @@ resource "azurerm_linux_virtual_machine" "main" {
     }
 
     tags = {
-        reason = var.reason
+        reason  = var.reason
+        name    = var.server_names[count.index]
+        project = "simple-webserver"
     }
 }
 
