@@ -1,9 +1,9 @@
 # Azure Infrastructure Operations Project: Deploying a scalable IaaS web server in Azure
 
-### Introduction
+## Introduction
 This project aims to create a simple scalable web server in Azure with the help of Packer, Terraform templates. 
 
-This project will deploy the following resource in Azure.
+This project will deploy the following resources in Azure.
 - Resource Group
 - Virtual Network
 - Subnet
@@ -14,14 +14,14 @@ This project will deploy the following resource in Azure.
 - Managed Disk
 - Availability Set
 
-### Getting Started
+## Getting Started
 1. Clone this repository
 2. Create an [Azure Account](https://portal.azure.com) 
 3. Install the [Azure command line interface](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 4. Install [Packer](https://www.packer.io/downloads)
 5. Install [Terraform](https://www.terraform.io/downloads.html)
 
-### Instructions
+## Instructions
 
 Once you've installed all the above dependencies, you need to do the following: 
 
@@ -49,7 +49,7 @@ packer build server.json
 It will take some time to build the image. Once the image is built, you can view it in the Azure portal. 
 Take a note of the `RESOURCE ID` which we will use in the next section.
 
-## Deploy the infrastructure with Terraform
+### Deploy the infrastructure with Terraform
 
 #### Specify the Variables
 
@@ -75,6 +75,8 @@ variable "packerImageId"{
   default = "<Place_your_resource_id_here>"
 }
 ```
+
+**Note** : According to the `require-tag-policy.json`, all resources deployed should have a tag.
 
 #### Deploy the Infrastructure
 
