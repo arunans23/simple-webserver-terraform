@@ -98,6 +98,9 @@ Once you are satisfied with the plan, you can deploy it.
 terraform apply
 ```
 
+It will do the deployment and give you out the result on how many resources were successfully created.
+![terraform apply output](./terraform-apply-output.png)
+
 Once you have deployed the infrastructure. You can go to the Azure portal to check the resources. Once you have finished, remember to destroy these resources.
 
 ```bash
