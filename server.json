@@ -13,7 +13,7 @@
 		"image_publisher": "Canonical",
 		"image_offer": "UbuntuServer",
 		"image_sku": "18.04-LTS",
-		"managed_image_resource_group_name": "nauran-devops",
+		"managed_image_resource_group_name": "nauran-devops-rg",
 		"managed_image_name": "LinuxWebServer",
 		"location": "West US",
 		"vm_size": "Standard_A4_v2",

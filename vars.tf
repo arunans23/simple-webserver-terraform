@@ -27,7 +27,7 @@ variable "server_names"{
 }
 
 variable "packerImageId"{
-  default = "/subscriptions/cd100e65-a83e-459c-ad08-34bc29cc5182/resourceGroups/nauran-devops/providers/Microsoft.Compute/images/WebServerLinux"
+  default = "/subscriptions/cd100e65-a83e-459c-ad08-34bc29cc5182/resourceGroups/nauran-devops-rg/providers/Microsoft.Compute/images/LinuxWebServer"
 }
 
 variable "vm_count"{
